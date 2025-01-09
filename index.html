@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profession Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <div id="newEmp">
+            <h1 class="heading">New Employees</h1>
+            <div id="input-box">
+                <div class="name-box">
+                    <label for="name">Enter Name</label>
+                    <input id="name" type="text" placeholder="Enter Name" required>
+                </div>
+                <div class="profession-box">
+                    <label for="profession">Enter Profession</label>
+                    <input id="profession" type="text" placeholder="Enter Profession" required>
+                </div>
+                <div class="age-box">
+                    <label for="age">Enter Age</label>
+                    <input id="age" type="number" placeholder="Enter Age" required>
+                </div>
+            </div>
+            <button id="btn" onclick="handleSubmit()" type="submit">Add User</button>
+        </div>
+        <div class="msg" id="msg_ref">
+
+        </div>
+        <div id="addedEmp">
+            <h1 class="heading">Added Employees</h1>
+            <div id="emp-list-container">
+                <!-- <div class="list_box">
+                    <div class="emp-details-box">
+                        <p>1</p>
+                        <p>Shahbaz</p>
+                        <p>Developer</p>
+                        <p>26</p>
+                    </div>
+                    <button class="delete-btn">Delete User</button>
+                </div>
+                <h3 class="zeroEmp" display="none">You have 0 Employees.</h3> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
